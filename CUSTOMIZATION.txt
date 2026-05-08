@@ -1,0 +1,247 @@
+📝 CUSTOMIZATION GUIDE
+
+This file shows you exactly how to customize the webpage.
+
+═══════════════════════════════════════════════════════════════
+
+1️⃣ CHANGE HER NAME
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+Find this line (around line 14):
+    <h1 class="title">Marien Wanjiku Muturi</h1>
+
+Change to:
+    <h1 class="title">Her Full Name Here</h1>
+
+Also change this line (around line 72):
+    <footer class="footer">
+        <p>Made with love for Marien ❤️</p>
+
+To:
+    <footer class="footer">
+        <p>Made with love for Her Name ❤️</p>
+
+═══════════════════════════════════════════════════════════════
+
+2️⃣ CHANGE THE LOVE LETTER
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+Find section around line 72-82:
+    <div class="letter-text">
+        <p>Dear Marien,</p>
+        <p>Every moment with you is a blessing...</p>
+        ...
+    </div>
+
+Replace the paragraphs with your personal message:
+    <div class="letter-text">
+        <p>Dear Marien,</p>
+        <p>Your personal message here...</p>
+        <p>Another paragraph with your feelings...</p>
+        <p>More heartfelt words...</p>
+        <p>Forever yours,</p>
+        <p class="signature">Your Name ❤️</p>
+    </div>
+
+═══════════════════════════════════════════════════════════════
+
+3️⃣ CHANGE THE "WHY YOU MATTER" SECTION
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+Find section around line 94-115:
+    <div class="reason-card">
+        <span class="emoji">💫</span>
+        <h3>Your Smile</h3>
+        <p>Brighten even my darkest days</p>
+    </div>
+
+You can:
+- Change the emoji (💫, 💪, 🌟, ❤️, 🌸, ✨, etc.)
+- Change the title
+- Change the description
+
+Example:
+    <div class="reason-card">
+        <span class="emoji">🌸</span>
+        <h3>Your Beauty</h3>
+        <p>Both inside and out</p>
+    </div>
+
+═══════════════════════════════════════════════════════════════
+
+4️⃣ ADD MORE LOVE MESSAGES
+═══════════════════════════════════════════════════════════════
+
+File: script.js
+Find around line 2:
+    const loveMessages = [
+        "Every moment with you is a treasure...",
+        "You are my greatest blessing...",
+        ...
+    ];
+
+Add your custom messages. Each message is in quotes and separated by comma:
+    const loveMessages = [
+        "Every moment with you is a treasure...",
+        "You are my greatest blessing...",
+        "Your smile makes my heart skip a beat!",
+        "I love you more than words can express.",
+        "With you, I found my forever.",
+        "Thank you for being my person.",
+        ...
+    ];
+
+═══════════════════════════════════════════════════════════════
+
+5️⃣ CHANGE COLORS
+═══════════════════════════════════════════════════════════════
+
+File: styles.css
+
+Current colors:
+- Main color: #c41e5f (dark pink/red)
+- Secondary: #e85b8a (light pink)
+- Accent: #ffe0f0 (very light pink)
+
+Find and replace:
+
+Main color (#c41e5f) - appears throughout:
+    color: #c41e5f;
+Replace with your hex color code, e.g., #e85b8a
+
+Secondary color (#e85b8a):
+    color: #e85b8a;
+
+Accent color (#ffe0f0):
+    background: #ffe0f0;
+
+Example - Change to purple theme:
+- Replace #c41e5f with #8b00b8
+- Replace #e85b8a with #c724d4
+- Replace #ffe0f0 with #f3d4ff
+
+═══════════════════════════════════════════════════════════════
+
+6️⃣ CHANGE THE SUBTITLE
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+Find around line 15:
+    <p class="subtitle">A Special Someone</p>
+
+Change to:
+    <p class="subtitle">My Love, My Heart, My Forever</p>
+
+═══════════════════════════════════════════════════════════════
+
+7️⃣ CHANGE SECTION TITLES
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+
+"Our Moments Together" (line ~48):
+    <h2>Our Memories Together</h2>
+
+"A Letter for You" (line ~71):
+    <h2>A Message From My Heart</h2>
+
+"Why You Matter" (line ~89):
+    <h2>All The Reasons I Love You</h2>
+
+"A Little Message" (line ~117):
+    <h2>Words For My Love</h2>
+
+═══════════════════════════════════════════════════════════════
+
+8️⃣ EDIT THE FOOTER DATE
+═══════════════════════════════════════════════════════════════
+
+File: script.js
+Find around line 36:
+    document.getElementById('currentDate').textContent = `May 8, 2026 - Made with all my love ❤️`;
+
+Change to:
+    document.getElementById('currentDate').textContent = `Today's Date - Made with all my love ❤️`;
+
+Or:
+    document.getElementById('currentDate').textContent = `May 14, 2026 - Happy Anniversary! ❤️`;
+
+═══════════════════════════════════════════════════════════════
+
+9️⃣ CHANGE BUTTON TEXT
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+Find around line 120:
+    <button class="btn" onclick="generateMessage()">Click for Another Message 💕</button>
+
+Change to:
+    <button class="btn" onclick="generateMessage()">Another Reason I Love You 💕</button>
+
+═══════════════════════════════════════════════════════════════
+
+🔟 CHANGE THE GALLERY SECTION HEADING
+═══════════════════════════════════════════════════════════════
+
+File: index.html
+Find around line 47:
+    <h2>Our Moments Together</h2>
+
+Change to:
+    <h2>Our Beautiful Journey</h2>
+
+Or:
+    <h2>Memories With You</h2>
+
+═══════════════════════════════════════════════════════════════
+
+🎨 COLOR CODE REFERENCE
+═══════════════════════════════════════════════════════════════
+
+Popular Color Palettes (hex codes):
+
+ROMANTIC RED/PINK:
+- #c41e5f (dark red) - Current
+- #e85b8a (light pink) - Current
+- #ffe0f0 (very light)
+
+PURPLE:
+- #8b00b8 (dark)
+- #c724d4 (light)
+- #f3d4ff (very light)
+
+BLUE:
+- #0066cc (dark)
+- #0099ff (light)
+- #cce5ff (very light)
+
+EMERALD GREEN:
+- #116b5c (dark)
+- #2fa399 (light)
+- #d0ebe5 (very light)
+
+GOLD/WARM:
+- #d4a574 (dark)
+- #e8c4a0 (light)
+- #fef5ed (very light)
+
+═══════════════════════════════════════════════════════════════
+
+💡 TIPS FOR CUSTOMIZATION
+═══════════════════════════════════════════════════════════════
+
+✓ Save backups before making big changes
+✓ Test in browser after each change
+✓ Keep the heart emojis for the romantic theme
+✓ Make text personal and heartfelt
+✓ Use consistent emoji themes
+✓ Test on mobile phone before sharing
+✓ Don't change file structure or names
+✓ Use line numbers to find exactly where to edit
+
+═══════════════════════════════════════════════════════════════
+
+Need help? See README.md for detailed information!
