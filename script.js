@@ -1,5 +1,6 @@
 // Love messages for random generation
 const loveMessages = [
+    "I love your smile and your not-so-secretly ugly laugh. 😊❤️",
     "Every moment with you is a treasure I hold close to my heart. ❤️",
     "You are my greatest blessing and my favorite person in the whole world. 💕",
     "My heart chose you before my mind could understand why. 💫",
