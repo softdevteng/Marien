@@ -3,100 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Marien Wanjiku Muturi ❤️</title>
+    <title>For My Beloved - Marien Wanjiku Muturi ❤️</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
     <div class="background-animation"></div>
+    <div class="particle-container" id="particleContainer"></div>
     
     <div class="container">
         <!-- Header Section -->
         <header class="header">
-            <h1 class="title">Marien Wanjiku Muturi❤️</h1>
-            <p class="subtitle">A Special Someone</p>
-            <div class="heart-animation">❤️</div>
+            <div class="header-content">
+                <h1 class="title">Marien Wanjiku Muturi</h1>
+                <p class="subtitle">You Are My Greatest Love Story ❤️</p>
+                <div class="heart-animation">💕</div>
+            </div>
         </header>
 
-        <!-- Photo Gallery Section -->
-        <section class="gallery">
-            <h2>The Beauty That Captures My Heart</h2>
-            <div class="photo-grid">
-                <div class="photo-card">
-                    <img src="assets/images/WhatsApp Image 2026-05-08 at 17.44.31.jpeg" alt="Our Memory">
-                </div>
-                <div class="photo-card">
-                    <img src="assets/images/m.jpeg" alt="Our Memory">
-                </div>
-                <div class="photo-card">
-                    <img src="assets/images/WhatsApp Image 2026-05-08 at 17.53.56.jpeg" alt="Our Memory">
-                </div>
-                <div class="photo-card">
-                    <img src="assets/images/w.jpeg" alt="Our Memory">
+        <!-- Video Background Section with Letter -->
+        <section class="hero-section">
+            <div class="hero-wrapper">
+                <video autoplay muted loop class="hero-video" id="heroVideo"></video>
+                <div class="hero-overlay">
+                    <p class="hero-text">Every moment with you is a masterpiece</p>
                 </div>
             </div>
         </section>
 
-        <!-- Letter Section -->
+        <!-- Letter Section - The Heart of the Page -->
         <section class="letter-section">
-            <h2>A Letter for You</h2>
-            <div class="letter-container">
-                <div class="letter-image">
-                    <img src="assets/images/Love Letter.jpeg" alt="Love Letter" id="letterImg">
+            <div class="letter-wrapper">
+                <div class="letter-content">
+                    <div class="letter-header">A Letter from My Heart</div>
+                    
+                    <div class="letter-main">
+                        <div class="letter-image-wrapper">
+                            <img src="assets/images/Love Letter.jpeg" alt="Handwritten Love Letter" class="handwritten-letter" id="letterImg">
+                            <div class="letter-glow"></div>
+                        </div>
+                        
+                        <div class="letter-extended">
+                            <div class="love-letter">
+                                <p class="letter-opener">My Dearest Marien,</p>
+                                
+                                <p>Words could never truly capture what you mean to me, but I'll try my best. When I look into your eyes, I see forever. When I hold your hand, I feel home. When I hear your laugh, my heart stops and then starts again, beating only for you.</p>
+                                
+                                <p>You are my inspiration, my greatest blessing, and my favorite adventure. Every moment with you is treasured in my heart like precious gems. From the smallest moments to the grandest adventures, each memory of you is a gift I will never take for granted.</p>
+                                
+                                <p>Your beauty radiates not just from your appearance, but from the incredible person you are inside. Your kindness, your strength, your compassion, and your unwavering spirit make you the most extraordinary woman I've ever known.</p>
+                                
+                                <p>I want you to know that choosing you every single day is the easiest and best decision I've ever made. You make me want to be better, do better, and love better. With you, I've found not just a partner, but my soulmate.</p>
+                                
+                                <p>Forever and always,</p>
+                                <p class="signature-line">Your Forever Love ❤️</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="letter-text">
-                    <p>Dear Marien,</p>
-                    <p>Every moment with you is a blessing I cherish deeply. Your smile lights up my world, and your presence makes every day special.</p>
-                    <p>You are extraordinary in every way—your kindness, your beauty, your spirit. I'm grateful for you every single day.</p>
-                    <p>This webpage is a small expression of my love and appreciation for you.</p>
-                    <p>Forever yours,</p>
-                    <p class="signature">Your Love ❤️</p>
+            </div>
+        </section>
+
+        <!-- Photo Carousel Section -->
+        <section class="carousel-section">
+            <h2>Marien's Beautiful Moments</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel-container" id="carouselContainer">
+                    <!-- Carousel items will be populated by JavaScript -->
                 </div>
+                <button class="carousel-btn prev" id="prevBtn">❮</button>
+                <button class="carousel-btn next" id="nextBtn">❯</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid Section -->
+        <section class="gallery">
+            <h2>Marien - The Beauty That Captures My Heart</h2>
+            <div class="photo-grid" id="photoGrid">
+                <!-- Photos will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Video Gallery -->
+        <section class="video-gallery">
+            <h2>Marien in Motion - Precious Video Moments</h2>
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos will be populated by JavaScript -->
             </div>
         </section>
 
         <!-- Message Section -->
         <section class="message-section">
-            <h2>Why You Matter</h2>
+            <h2>Why You Matter to Me</h2>
             <div class="reasons">
                 <div class="reason-card">
                     <span class="emoji">💫</span>
                     <h3>Your Smile</h3>
-                    <p>Brightens even my darkest days</p>
+                    <p>Lights up my world in ways I never knew possible</p>
                 </div>
                 <div class="reason-card">
                     <span class="emoji">💪</span>
                     <h3>Your Strength</h3>
-                    <p>Inspires me to be a better person</p>
+                    <p>Inspires me to be the best version of myself</p>
                 </div>
                 <div class="reason-card">
                     <span class="emoji">🌟</span>
                     <h3>Your Spirit</h3>
-                    <p>Makes the world more beautiful</p>
+                    <p>Makes every moment magical and unforgettable</p>
                 </div>
                 <div class="reason-card">
                     <span class="emoji">❤️</span>
                     <h3>Your Heart</h3>
-                    <p>Full of love and compassion</p>
+                    <p>Beats in perfect harmony with mine</p>
+                </div>
+                <div class="reason-card">
+                    <span class="emoji">✨</span>
+                    <h3>Your Presence</h3>
+                    <p>Turns ordinary days into extraordinary memories</p>
+                </div>
+                <div class="reason-card">
+                    <span class="emoji">🎵</span>
+                    <h3>You're My Melody</h3>
+                    <p>The song my heart sings every day</p>
                 </div>
             </div>
         </section>
 
-        <!-- Interactive Section -->
+        <!-- Interactive Message Section -->
         <section class="interactive-section">
-            <h2>A Little Message</h2>
+            <h2>A Message Just For You</h2>
             <div class="message-box">
-                <p id="randomMessage"></p>
-                <button class="btn" onclick="generateMessage()">Click for Another Message 💕</button>
+                <p id="randomMessage" class="message-text"></p>
+                <button class="btn" onclick="generateMessage()">✨ Show Me Another Message ✨</button>
+            </div>
+        </section>
+
+        <!-- Love Counter Section -->
+        <section class="love-counter-section">
+            <h2>Our Forever Journey</h2>
+            <div class="love-counters">
+                <div class="counter-card infinity-card">
+                    <div class="counter-number">∞</div>
+                    <p>Endless Love For You, Marien</p>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>Made with love for Marien ❤️</p>
+            <p class="footer-text">Created with all the love in my heart for Marien ❤️</p>
             <p class="date" id="currentDate"></p>
+            <p class="footer-note">Every photo, every video, every word on this page is a testament to how much you mean to me</p>
         </footer>
     </div>
 
     <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
